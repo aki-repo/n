@@ -11,6 +11,7 @@
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     ../wm/hyprland.nix
+    inputs.schizofox.homeManagerModules.default
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
@@ -52,6 +53,7 @@
   programs.git.enable = true;
   programs.micro.enable = true;
   programs.vscode.enable = true;
+  program.schizofox.enable = true;
 
   # Appearance
 
