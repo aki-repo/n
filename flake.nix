@@ -10,6 +10,15 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
     inputs.hyprland.url = "github:hyprwm/Hyprland";
+    helix.url = "github:helix-editor/helix";
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    zen-browser = {
+      url = "github:linuxmobile/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
   };
 
