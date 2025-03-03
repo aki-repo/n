@@ -181,6 +181,8 @@
   bindl = , XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
   # backlight
+  binde = , XF86MonBrightnessUp, exec, brightnessctl set 10%+
+  binde = , XF86MonBrightnessDown, exec, brightnessctl set 10%-
 
   # screenshot
   # stop animations while screenshotting; makes black border go away
