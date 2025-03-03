@@ -19,6 +19,7 @@
       url = "github:linuxmobile/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    schizofox.url = "github:schizofox/schizofox";
     
   };
 
