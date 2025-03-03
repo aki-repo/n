@@ -26,30 +26,25 @@
     #env = WLR_NO_HARDWARE_CURSORS,1
     #env = XCURSOR_SIZE, 24
     
-  exec-once = swaybg -i /home/aki/walls/chinese-hills.jpg
-  exec-once = waybar
+    #exec-once = swaybg -i /home/aki/walls/chinese-hills.jpg
+    #exec-once = waybar
 
-  # use this instead of hidpi patches
-  #  xwayland {
-  #    force_zero_scaling = true
-  #  }
+    # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
+    input {
+      kb_layout = us
+      kb_variant =
+      kb_model =
+      kb_options =
+      kb_rules =
 
-  # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
-  input {
-    kb_layout = us
-    kb_variant =
-    kb_model =
-    kb_options =
-    kb_rules =
+      follow_mouse = 1
 
-    follow_mouse = 1
-
-    touchpad {
+      touchpad {
         natural_scroll = false
-     }
+      }
 
-    sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
-  }
+      sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+    }
 
     general {
       gaps_in = 10
@@ -125,67 +120,65 @@
 
     windowrulev2 = dimaround, class:^(gcr-prompter)$
 
-  # fix xwayland apps
-  windowrulev2 = rounding 0, xwayland:1, floating:1
-  windowrulev2 = center, class:^(.*jetbrains.*)$, title:^(Confirm Exit|Open Project|win424|win201|splash)$
-  windowrulev2 = size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$
+    # fix xwayland apps
+    # windowrulev2 = rounding 0, xwayland:1, floating:1
+    # windowrulev2 = center, class:^(.*jetbrains.*)$, title:^(Confirm Exit|Open Project|win424|win201|splash)$
+    # windowrulev2 = size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$
 
 
-  # mouse movements
-  bindm = $mod, mouse:272, movewindow
-  bindm = $mod, mouse:273, resizewindow
+    # mouse movements
+    bindm = $mod, mouse:272, movewindow
+    bindm = $mod, mouse:273, resizewindow
 
-  # commands
-  bind = $mod Shift, Q, exec, pkill Hyprland
-  bind = $mod, Q, killactive,
-  bind = $mod, F, fullscreen,
-  bind = $mod, W, togglesplit,
-  bind = $mod, S, togglefloating,
-  bind = $mod, P, pseudo,
+    # commands
+    bind = $mod Shift, Q, exec, pkill Hyprland
+    bind = $mod, Q, killactive,
+    bind = $mod, F, fullscreen,
+    bind = $mod, W, togglesplit,
+    bind = $mod, S, togglefloating,
+    bind = $mod, P, pseudo,
 
-  # utility
-  # launcher
-  bind = $mod, D, exec, wofi --show drun
-  # terminal
-  bind = $mod, Return, exec, kitty
-  bind = $mod Shift, Return, exec, foot
+    # utility
+    # launcher
+    bind = $mod, D, exec, wofi --show drun
+    # terminal
+    bind = $mod, Return, exec, alacritty
+    bind = $mod Shift, Return, exec, ghostty
   
-  # move focus
-  bind = $mod, left, movefocus, l
-  bind = $mod, right, movefocus, r
-  bind = $mod, up, movefocus, u
-  bind = $mod, down, movefocus, d
+    # move focus
+    bind = $mod, left, movefocus, l
+    bind = $mod, right, movefocus, r
+    bind = $mod, up, movefocus, u
+    bind = $mod, down, movefocus, d
 
-# Switch workspaces with mainMod + [0-9]
-bind = $mod, 1, workspace, 1
-bind = $mod, 2, workspace, 2
-bind = $mod, 3, workspace, 3
-bind = $mod, 4, workspace, 4
-bind = $mod, 5, workspace, 5
-bind = $mod, 6, workspace, 6
-bind = $mod, 7, workspace, 7
-bind = $mod, 8, workspace, 8
-bind = $mod, 9, workspace, 9
+  # Switch workspaces with mainMod + [0-9]
+  bind = $mod, 1, workspace, 1
+  bind = $mod, 2, workspace, 2
+  bind = $mod, 3, workspace, 3
+  bind = $mod, 4, workspace, 4
+  bind = $mod, 5, workspace, 5
+  bind = $mod, 6, workspace, 6
+  bind = $mod, 7, workspace, 7
+  bind = $mod, 8, workspace, 8
+  bind = $mod, 9, workspace, 9
 
-# Move active window to a workspace with mainMod + SHIFT + [0-9]
-bind = $mod SHIFT, 1, movetoworkspace, 1
-bind = $mod SHIFT, 2, movetoworkspace, 2
-bind = $mod SHIFT, 3, movetoworkspace, 3
-bind = $mod SHIFT, 4, movetoworkspace, 4
-bind = $mod SHIFT, 5, movetoworkspace, 5
-bind = $mod SHIFT, 6, movetoworkspace, 6
-bind = $mod SHIFT, 7, movetoworkspace, 7
-bind = $mod SHIFT, 8, movetoworkspace, 8
-bind = $mod SHIFT, 9, movetoworkspace, 9
-
-
-# volume
-bindle = , XF86AudioRaiseVolume, exec, wpctl set-volume -l "1.0" @DEFAULT_AUDIO_SINK@ 6%+
-bindle = , XF86AudioLowerVolume, exec, wpctl set-volume -l "1.0" @DEFAULT_AUDIO_SINK@ 6%-
-bindl = , XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-bindl = , XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+  # Move active window to a workspace with mainMod + SHIFT + [0-9]
+  bind = $mod SHIFT, 1, movetoworkspace, 1
+  bind = $mod SHIFT, 2, movetoworkspace, 2
+  bind = $mod SHIFT, 3, movetoworkspace, 3
+  bind = $mod SHIFT, 4, movetoworkspace, 4
+  bind = $mod SHIFT, 5, movetoworkspace, 5
+  bind = $mod SHIFT, 6, movetoworkspace, 6
+  bind = $mod SHIFT, 7, movetoworkspace, 7
+  bind = $mod SHIFT, 8, movetoworkspace, 8
+  bind = $mod SHIFT, 9, movetoworkspace, 9
 
 
+  # volume
+  bindle = , XF86AudioRaiseVolume, exec, wpctl set-volume -l "1.0" @DEFAULT_AUDIO_SINK@ 6%+
+  bindle = , XF86AudioLowerVolume, exec, wpctl set-volume -l "1.0" @DEFAULT_AUDIO_SINK@ 6%-
+  bindl = , XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+  bindl = , XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
   # backlight
 
