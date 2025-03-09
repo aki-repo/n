@@ -11,7 +11,7 @@
   services.xserver.desktopManager.gnome.enable = true;
 
       environment.gnome.excludePackages = with pkgs.gnome; [
-        orca
+        # orca
         # evince
         # file-roller
         geary
@@ -32,12 +32,12 @@
         # glib # for gsettings program
         # gnome-menus
         # gtk3.out # for gtk-launch program
-        xdg-user-dirs # Update user dirs as described in https://freedesktop.org/wiki/Software/xdg-user-dirs/
-        xdg-user-dirs-gtk # Used to create the default bookmarks
+        #xdg-user-dirs # Update user dirs as described in https://freedesktop.org/wiki/Software/xdg-user-dirs/
+        #xdg-user-dirs-gtk # Used to create the default bookmarks
         #
         baobab
         epiphany
-        gnome-text-editor
+        #gnome-text-editor
         # gnome-calculator
         gnome-calendar
         gnome-characters
@@ -54,7 +54,7 @@
         nautilus
         # gnome-connections
         simple-scan
-        snapshot
+        #snapshot
         totem
         yelp
         gnome-software
@@ -63,6 +63,6 @@
 
   stylix = {
     enable = true;
-    image = ../w/puffin.jpg;
+    image = ./home-manager/w/puffin.jpg;
   };  
 }
