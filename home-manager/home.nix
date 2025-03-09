@@ -10,7 +10,8 @@
   # You can import other home-manager modules here
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
-    ../wm/hyprland.nix
+    #../wm/hyprland.nix
+    #./wm/gnome.nix
     inputs.schizofox.homeManagerModules.default
 
     # You can also split up your configuration and import pieces of it here:
@@ -46,43 +47,16 @@
 
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
-  # home.packages = with pkgs; [ steam ];
+  home.packages = with pkgs; [ tradingview google-chrome ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
   programs.git.enable = true;
   programs.micro.enable = true;
   programs.vscode.enable = true;
-  program.schizofox.enable = true;
-
-  # Appearance
-
-  home.pointerCursor = {
-    gtk.enable = true;
-    # x11.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = 16;
-  };
-
-  gtk = {
-    enable = true;
-
-    theme = {
-      package = pkgs.flat-remix-gtk;
-      name = "Flat-Remix-GTK-Grey-Darkest";
-    };
-
-    iconTheme = {
-      package = pkgs.gnome.adwaita-icon-theme;
-      name = "Adwaita";
-    };
-
-    font = {
-      name = "Sans";
-      size = 11;
-    };
-  };
+  programs.schizofox.enable = true;
+  programs.ghostty.enable = true;
+  programs.helix.enable = true;
 
   
   # Nicely reload system units when changing configs

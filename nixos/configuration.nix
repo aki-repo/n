@@ -16,7 +16,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
-    ../wm/gnome.nix
+    ../home-manager/wm/gnome.nix
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
   ];
@@ -90,7 +90,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -157,22 +157,18 @@
     };
   };
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      # Import your home-manager configuration
-      aki = import ../home-manager/home.nix;
-    };
-  };
-
-  # Install firefox.
-    programs.firefox.enable = true;
-
-  
-  nix.settings = {
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-  };
+  #home-manager = {
+  #  extraSpecialArgs = { inherit inputs; };
+  #  users = {
+  #    # Import your home-manager configuration
+  #    aki = import ../home-manager/home.nix;
+  #  };
+  #};
+ 
+#  nix.settings = {
+#    substituters = ["https://hyprland.cachix.org"];
+#    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+#  };
 
 
   # List packages installed in system profile. To search, run:

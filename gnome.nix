@@ -10,14 +10,14 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
-      environment.gnome.excludePackages = with pkgs; [
+      environment.gnome.excludePackages = with pkgs.gnome; [
         orca
         # evince
         # file-roller
         geary
         gnome-disk-utility
-        # seahorse
-        # sushi
+        seahorse
+        sushi
         # sysprof
         # gnome-shell-extensions
         # adwaita-icon-theme
@@ -27,8 +27,8 @@
         # gnome-color-manager
         # gnome-control-center
         # gnome-shell-extensions
-        gnome-tour # GNOME Shell detects the .desktop file on first log-in.
-        gnome-user-docs
+        # gnome-tour # GNOME Shell detects the .desktop file on first log-in.
+        # gnome-user-docs
         # glib # for gsettings program
         # gnome-menus
         # gtk3.out # for gtk-launch program
@@ -41,7 +41,7 @@
         # gnome-calculator
         gnome-calendar
         gnome-characters
-        # gnome-clocks
+        gnome-clocks
         # gnome-console
         gnome-contacts
         gnome-font-viewer
@@ -51,7 +51,7 @@
         # gnome-system-monitor
         gnome-weather
         # loupe
-        # nautilus
+        nautilus
         # gnome-connections
         simple-scan
         snapshot
@@ -59,9 +59,10 @@
         yelp
         gnome-software
       ];
+    
 
   stylix = {
     enable = true;
-    image = ./w/puffin.jpg;
+    image = ../w/puffin.jpg;
   };  
 }
