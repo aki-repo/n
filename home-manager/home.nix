@@ -54,7 +54,7 @@
   programs.git.enable = true;
   programs.micro.enable = true;
   programs.vscode.enable = true;
-  programs.schizofox.enable = true;
+  programs.firefox.enable = true;
   programs.ghostty.enable = true;
   programs.helix.enable = true;
 
