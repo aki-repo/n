@@ -12,7 +12,7 @@
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     #../wm/hyprland.nix
     #./wm/gnome.nix
-    inputs.schizofox.homeManagerModules.default
+    
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
@@ -55,8 +55,7 @@
   programs.micro.enable = true;
   programs.vscode.enable = true;
   programs.firefox.enable = true;
-  programs.ghostty.enable = true;
-  programs.helix.enable = true;
+
 
   
   # Nicely reload system units when changing configs
