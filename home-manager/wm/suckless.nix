@@ -1,5 +1,5 @@
 services.xserver.windowManager.dwm.package = pkgs.dwm.override {
-  conf = ./config.def.h;
+  conf = ./dwm.config.def.h;
   patches = [
     # for local patch files, replace with relative path to patch file
     # ./path/to/local.patch
@@ -32,7 +32,7 @@ services.xserver.windowManager.dwm.package = pkgs.dwm.override {
 # st
 environment.systemPackages = [
     (pkgs.st.override {
-      conf = ./config.def.h;
+      conf = ./st.config.def.h;
       patches = [ ./my-fix.patch ]; # Or some `fetchPatch` thing
     })
   ];
