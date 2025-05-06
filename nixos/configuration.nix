@@ -16,13 +16,14 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
-    ../dwm.nix
+    #../dwm.nix
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
   ];
 
   # kernel
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # polkit
   security.polkit.enable = true;
@@ -76,16 +77,22 @@
   services.xserver.enable = true;
   services.xserver.displayManager.startx.enable = true;
 
+  # DWM
+  services.xserver.windowManager.dwm.package = pkgs.dwm.override{
+#    conf = ../home-manager/wm/dwm.config.def.h;  
+  };
+  services.xserver.windowManager.dwm.enable = true;
+  
   # bigger tty fonts
   console.font =
-    "${pkgs.terminus_font}/share/consolefonts/ter-u28n.psf.gz";
+    "${pkgs.terminus_font}/share/consolefonts/ter-u32n.psf.gz";
   services.xserver.dpi = 180;
   environment.variables = {
     ## Used by GTK 3
     # `GDK_SCALE` is limited to integer values
-    GDK_SCALE = "2";
+    # GDK_SCALE = "2";
     # Inverse of GDK_SCALE
-    GDK_DPI_SCALE = "0.5";
+    # GDK_DPI_SCALE = "0.5";
 
     # Used by Qt 5
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
@@ -176,13 +183,13 @@
     };
   };
 
-  #home-manager = {
-  #  extraSpecialArgs = { inherit inputs; };
-  #  users = {
-  #    # Import your home-manager configuration
-  #    aki = import ../home-manager/home.nix;
-  #  };
-  #};
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      # Import your home-manager configuration
+      aki = import ../home-manager/home.nix;
+    };
+  };
  
 #  nix.settings = {
 #    substituters = ["https://hyprland.cachix.org"];
@@ -194,7 +201,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     #micro # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    #git
+    git
   ];
 
 

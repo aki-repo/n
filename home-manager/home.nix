@@ -12,7 +12,7 @@
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     #../wm/hyprland.nix
     #./wm/gnome.nix
-    ../wm/suckless.nix
+    #./wm/suckless.nix
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
@@ -45,17 +45,22 @@
     homeDirectory = "/home/aki";
   };
 
+
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
-  home.packages = with pkgs; [ tradingview google-chrome ];
+  home.packages = with pkgs; [ tradingview google-chrome dmenu];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
-  programs.git.enable = true;
+  programs.git = {
+  	enable = true;
+  	userName = "aki-repo";
+  	userEmail = "andreast.work@gmail.com";	
+  };
   programs.micro.enable = true;
   programs.vscode.enable = true;
   programs.firefox.enable = true;
-
+  programs.kitty.enable = true;
 
   
   # Nicely reload system units when changing configs

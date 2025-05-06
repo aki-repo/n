@@ -15,11 +15,6 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    zen-browser = {
-      url = "github:linuxmobile/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    schizofox.url = "github:schizofox/schizofox";
     
   };
 
@@ -30,9 +25,6 @@
     nixos-hardware,
     stylix,
     helix,
-    ghostty,
-    schizofox,
-    zen-browser,
     niri,
     hyprland,
     ...
