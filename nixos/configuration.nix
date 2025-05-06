@@ -100,7 +100,13 @@
 
   # DWM
   services.xserver.windowManager.dwm.package = pkgs.dwm.override{
-    conf = ../home-manager/wm/dwm.config.def.h;  
+    conf = ../home-manager/wm/dwm.config.def.h;
+    patches = [
+      useless-gap = pkgs.fetchpatch {
+        url = "https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-20211119-58414bee958f2.diff";
+       hash = "sha256-gMt6da4fOP58oWfWNvuOkFBt3dYWXC8yy7DdGwLv9XY=";
+      };
+    ] 
   };
   services.xserver.windowManager.dwm.enable = true;
   
