@@ -60,7 +60,18 @@
   programs.micro.enable = true;
   programs.vscode.enable = true;
   programs.firefox.enable = true;
-  programs.kitty.enable = true;
+  #programs.kitty.enable = true;
+  programs.kitty = {
+    enable = true;
+    package =
+      pkgs.writeScriptBin "null" "";
+
+    font = {
+      name = "FiraCode Nerd Font";
+      size = 14;
+    };
+    theme = "Rosé Pine";
+   };
 
   
   # Nicely reload system units when changing configs
