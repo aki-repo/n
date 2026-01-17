@@ -5,6 +5,9 @@
       enable = true;
       settings = {
         # configure noctalia here
+        templates = {
+				  activeTemplates = [ GTK Qt Alacritty Kitty Helix Hyprland Yazi VScode ]; 
+				};
         bar = {
           density = "comfortable";
           position = "left";
@@ -57,8 +60,8 @@
             ];
           };
         };
-        colorSchemes.predefinedScheme = "Monochrome";
-        general = {
+        colorSchemes.predefinedScheme = "Neutral";
+				general = {
         };
         location = {
           monthBeforeDay = true;

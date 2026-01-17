@@ -13,6 +13,7 @@ in
 
   imports = [
     ./modules/neovim.nix
+    ./modules/helix.nix
     ./modules/bash.nix
     ./modules/starship.nix
     ./modules/noctalia.nix
