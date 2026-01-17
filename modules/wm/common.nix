@@ -7,6 +7,7 @@
     dunst
     nemo
     vscode
+    discord
     librewolf
     chromium
     microfetch

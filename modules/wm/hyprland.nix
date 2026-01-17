@@ -9,10 +9,10 @@
     swaybg
     hyprlauncher
     hypridle
-    grimblast
+    hyprshot
     xdg-desktop-portal-hyprland
     hyprpolkitagent
-    waybar
+    #waybar
     wl-clipboard
     ];
 
