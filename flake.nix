@@ -27,9 +27,8 @@
       modules = [
         ./configuration.nix
         home-manager.nixosModules.home-manager
-	    stylix.nixosModules.stylix
         {     
-	    home-manager = {
+	      home-manager = {
 	        extraSpecialArgs = { inherit inputs; };
             useGlobalPkgs = true;
             useUserPackages = true;

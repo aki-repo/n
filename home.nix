@@ -16,7 +16,7 @@ in
     ./modules/bash.nix
     ./modules/starship.nix
     #./modules/theme.nix
-    #./modules/wm/hyprland.nix
+    ./modules/wm/hyprland.nix
     #./modules/wm/niri.nix
     ./modules/wm/common.nix
 ];
@@ -28,8 +28,8 @@ in
   # Git configuration
     programs.git = {
       enable = true;
-      userName = "Andreas Taenzer";  # Replace with your name
-      userEmail = "andreast.work@gmail.com";  # Replace with your email
+      settings.user.name = "Andreas Taenzer";  # Replace with your name
+      settings.user.email = "andreast.work@gmail.com";  # Replace with your email
       };
 
   # Essential packages
