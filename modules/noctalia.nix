@@ -6,8 +6,11 @@
       settings = {
         # configure noctalia here
         templates = {
-				  activeTemplates = [ GTK Qt Alacritty Kitty Helix Hyprland Yazi VScode ]; 
+				  activeTemplates = [ "gtk" "qt" "hyprland" "alacritty" "vscode" "helix" ]; 
 				};
+        dock = {
+          enabled = false;
+        };
         bar = {
           density = "comfortable";
           position = "left";
