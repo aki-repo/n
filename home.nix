@@ -16,7 +16,7 @@ in
     ./modules/bash.nix
     ./modules/starship.nix
     #./modules/theme.nix
-    ./modules/wm/hyprland.nix
+    #./modules/wm/hyprland.nix
     #./modules/wm/niri.nix
     ./modules/wm/common.nix
 ];
