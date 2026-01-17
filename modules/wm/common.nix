@@ -8,6 +8,8 @@
     nemo
     vscode
     librewolf
+    chromium
+    microfetch
     nwg-look
     qutebrowser
     google-chrome

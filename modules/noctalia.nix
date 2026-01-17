@@ -21,6 +21,18 @@
               {
                 id = "Bluetooth";
               }
+              {
+                id = "Brightness";
+              }
+              {
+                id = "Volume";
+              }
+              {
+                id = "SystemMonitor";
+              }
+              {
+                id = "PowerProfile";
+              }
             ];
             center = [
               {
