@@ -79,9 +79,8 @@
   programs.niri.enable = true;
 
   stylix.enable = true;
-  stylix.targets.fuzzel.enable = true;
   stylix.polarity = "dark";
-  stylix.image = ./modules/w/island.jpg;
+  stylix.image = ./modules/w/schweiz.jpg;
 
   services.displayManager.ly.enable = true;
 
