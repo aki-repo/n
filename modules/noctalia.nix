@@ -6,7 +6,20 @@
       settings = {
         # configure noctalia here
         templates = {
-				  activeTemplates = [ "gtk" "qt" "hyprland" "alacritty" "vscode" "helix" ]; 
+				  activeTemplates = [ 
+            {
+              id = "alacritty";
+              enabled = true;
+            }
+            {
+              id = "hyprland";
+              enabled = true;
+            }
+            {
+              id = "helix";
+              enabled = true;
+            }
+          ]; 
 				};
         dock = {
           enabled = false;
