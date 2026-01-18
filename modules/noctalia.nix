@@ -35,6 +35,10 @@
               id = "niri";
               enabled = true;
             }
+            {
+              id = "walker";
+              enabled = true;
+            }
           ]; 
 				};
         dock = {
@@ -92,7 +96,12 @@
             ];
           };
         };
-        colorSchemes.predefinedScheme = "Neutral";
+        colorSchemes = {
+          predefinedScheme = "Neutral";
+          useWallpaperColors = true;
+          darkMode = true;
+          matugenSchemeType = "Neutral";
+        };
 				general = {
         };
         location = {

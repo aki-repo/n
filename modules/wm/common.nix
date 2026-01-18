@@ -10,7 +10,8 @@
     discord
     librewolf
     chromium
-    microfetch
+    matugen
+		microfetch
     nwg-look
     qutebrowser
     google-chrome
