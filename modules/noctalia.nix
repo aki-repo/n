@@ -26,7 +26,7 @@
         };
         ui = {
           settingsPanelMode = "center";
-          panelBackgroundOpacity = 0.5;
+          #panelBackgroundOpacity = 0.5;
         };
         controlCenter = {
           position = "center";
