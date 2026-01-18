@@ -5,6 +5,14 @@
       enable = true;
       settings = {
         # configure noctalia here
+        templates ={
+          ActiveTemaplates = [
+            {
+              id = "Niri";
+              enable = true;
+            }
+          ];
+        };
         dock = {
           enabled = false;
         };
