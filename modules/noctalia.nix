@@ -11,6 +11,14 @@
               id = "niri";
               enable = true;
             }
+            {
+              id = "discord";
+              enable = true;
+            }
+            {
+              id = "fuzzel";
+              enable = true;
+            }
           ];
         };
         dock = {
