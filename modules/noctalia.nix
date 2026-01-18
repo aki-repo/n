@@ -9,23 +9,31 @@
           ActiveTemaplates = [
             {
               id = "niri";
-              enable = true;
+              enabled = true;
             }
             {
               id = "discord";
-              enable = true;
+              enabled = true;
             }
             {
               id = "fuzzel";
-              enable = true;
+              enabled = true;
             }
           ];
         };
         dock = {
           enabled = false;
         };
+        ui = {
+          settingsPanelMode = "center";
+          panelBackgroundOpacity = 0.5;
+        };
+        controlCenter = {
+          position = "center";
+        };
+        
         bar = {
-          density = "comfortable";
+          density = "spacious";
           position = "left";
           showCapsule = false;
           outerCorners = false;
