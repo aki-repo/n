@@ -8,7 +8,7 @@
         templates ={
           ActiveTemaplates = [
             {
-              id = "Niri";
+              id = "niri";
               enable = true;
             }
           ];
@@ -20,6 +20,7 @@
           density = "comfortable";
           position = "left";
           showCapsule = false;
+          outerCorners = false;
           widgets = {
             left = [
               {
