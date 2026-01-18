@@ -4,7 +4,8 @@
 
 
   home.packages = with pkgs; [
-    dunst
+    fuzzel
+    xwayland-satellite
     nemo
     vscode
     discord

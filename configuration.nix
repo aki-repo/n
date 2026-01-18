@@ -78,7 +78,8 @@
   programs.niri.enable = true;
 
   stylix.enable = true;
-  stylix.image = ./modules/w.jpg;
+  stylix.polarity = "dark";
+  stylix.image = ./modules/w/schweiz.jpg;
 
   services.displayManager.ly.enable = true;
 
