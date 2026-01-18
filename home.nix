@@ -27,6 +27,7 @@ in
   home.homeDirectory = "/home/aki";
   home.stateVersion = "25.11";
   stylix.targets.fuzzel.enable = true;
+  stylix.targets.fuzzel.colors.override = true;
   stylix.targets.fuzzel.colors.enable = true;
 
   # Git configuration

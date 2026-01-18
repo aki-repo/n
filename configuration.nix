@@ -4,6 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      #./modules/gnome.nix
     ];
 
   # Bootloader.
@@ -79,7 +80,7 @@
 
   stylix.enable = true;
   stylix.polarity = "dark";
-  stylix.image = ./modules/w/schweiz.jpg;
+  stylix.image = ./modules/w/island.jpg;
 
   services.displayManager.ly.enable = true;
 
