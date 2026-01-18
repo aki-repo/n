@@ -79,6 +79,7 @@
   programs.niri.enable = true;
 
   stylix.enable = true;
+  stylix.targets.fuzzel.enable = true;
   stylix.polarity = "dark";
   stylix.image = ./modules/w/island.jpg;
 

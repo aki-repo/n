@@ -8,15 +8,15 @@
         templates ={
           ActiveTemaplates = [
             {
-              id = "niri";
+              id = "Niri";
               enabled = true;
             }
             {
-              id = "discord";
+              id = "Discord";
               enabled = true;
             }
             {
-              id = "fuzzel";
+              id = "Fuzzel";
               enabled = true;
             }
           ];
