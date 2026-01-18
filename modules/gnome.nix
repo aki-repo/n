@@ -13,14 +13,14 @@
 
   environment.systemPackages = with pkgs; [
     gnomeExtensions.blur-my-shell
-    gnomeExtnsions.paperwm
+    gnomeExtensions.paperwm
     gnomeExtensions.just-perfection
     refine
   ];
 
   qt = {
     enable = true;
-    platformTheme = "gnome";
+    platformTheme = "adwaita";
     style = "adwaita-dark";
   };
 
