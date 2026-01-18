@@ -8,7 +8,9 @@
     xwayland-satellite
     nemo
     vscode
-    discord
+		adw-gtk3
+    papirus-icon-theme
+		vesktop 
     librewolf
     chromium
     matugen
