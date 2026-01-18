@@ -5,42 +5,6 @@
       enable = true;
       settings = {
         # configure noctalia here
-        templates = {
-				  activeTemplates = [ 
-            {
-              id = "alacritty";
-              enabled = true;
-            }
-            {
-              id = "hyprland";
-              enabled = true;
-            }
-            {
-              id = "helix";
-              enabled = true;
-            }
-            {
-              id = "gtk";
-              enabled = true;
-            }
-            {
-              id = "qt";
-              enabled = true;
-            }
-            {
-              id = "vscode";
-              enabled = true;
-            }
-            {
-              id = "niri";
-              enabled = true;
-            }
-            {
-              id = "walker";
-              enabled = true;
-            }
-          ]; 
-				};
         dock = {
           enabled = false;
         };
