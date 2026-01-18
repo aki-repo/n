@@ -8,15 +8,15 @@
         templates ={
           ActiveTemaplates = [
             {
-              id = "Niri";
+              id = "niri";
               enabled = true;
             }
             {
-              id = "Discord";
+              id = "discord";
               enabled = true;
             }
             {
-              id = "Fuzzel";
+              id = "fuzzel";
               enabled = true;
             }
           ];
@@ -89,7 +89,7 @@
           predefinedScheme = "Neutral";
           useWallpaperColors = true;
           darkMode = true;
-          matugenSchemeType = "Neutral";
+          matugenSchemeType = "neutral";
         };
 				general = {
         };
