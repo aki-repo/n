@@ -19,6 +19,22 @@
               id = "helix";
               enabled = true;
             }
+            {
+              id = "gtk";
+              enabled = true;
+            }
+            {
+              id = "qt";
+              enabled = true;
+            }
+            {
+              id = "vscode";
+              enabled = true;
+            }
+            {
+              id = "niri";
+              enabled = true;
+            }
           ]; 
 				};
         dock = {
