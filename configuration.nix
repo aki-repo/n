@@ -78,9 +78,42 @@
 
   programs.niri.enable = true;
 
-  stylix.enable = true;
-  stylix.polarity = "dark";
-  stylix.image = ./modules/w/schweiz.jpg;
+  stylix = {
+    enable = true;
+    polarity = "dark";
+
+    image = ./modules/w/schweiz.jpg;
+    iconTheme = {
+			enable = true;
+	 		package = pkgs.reversal-icon-theme;
+	 		light = "Reversal";
+	 		dark = "Reversal";
+	 	};
+    cursor = {
+ 	       		package = pkgs.bibata-cursors;
+ 	       		name = "Bibata-Modern-Classic";
+ 	       		size = 24;
+ 	       	};
+ 	       	fonts = {
+ 	       		sizes = {
+ 	       			terminal = 14;
+ 	       			desktop = 12;
+ 	       		};
+
+ 	       		monospace = {
+ 	       			package = pkgs.nerd-fonts.jetbrains-mono;
+ 	       			name = "JetBrainsMono Nerd Font Mono";
+ 	       		};
+ 	       		sansSerif = {
+ 	       			package = pkgs.dejavu_fonts;
+ 	       			name = "DejaVu Sans";
+ 	       		};
+ 	       		serif = {
+ 	       			package = pkgs.dejavu_fonts;
+ 	       			name = "DejaVu Serif";
+ 	       		};
+ 	       	};
+  };
 
   services.displayManager.ly.enable = true;
 
@@ -133,10 +166,6 @@
     kitty
   ];
   
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
-
 
   nix.settings = {
     substituters = ["https://hyprland.cachix.org"];
