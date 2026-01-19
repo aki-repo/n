@@ -16,7 +16,7 @@ in
     ./modules/helix.nix
     ./modules/bash.nix
     ./modules/starship.nix
-    ./modules/noctalia.nix
+    #./modules/noctalia.nix
     #./modules/theme.nix
     ./modules/wm/hyprland.nix
     #./modules/wm/niri.nix

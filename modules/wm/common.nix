@@ -5,6 +5,7 @@
 
   home.packages = with pkgs; [
     fuzzel
+    papirus-icon-theme
     xwayland-satellite
     nemo
     vscode
