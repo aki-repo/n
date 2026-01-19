@@ -9,7 +9,6 @@
     nemo
     vscode
 		adw-gtk3
-    papirus-icon-theme
 		vesktop 
     librewolf
     chromium
