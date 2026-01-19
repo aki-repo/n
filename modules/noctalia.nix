@@ -89,7 +89,7 @@
           predefinedScheme = "Neutral";
           useWallpaperColors = true;
           darkMode = true;
-          matugenSchemeType = "neutral";
+          matugenSchemeType = "scheme-neutral";
         };
 				general = {
         };

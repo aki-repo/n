@@ -67,56 +67,19 @@
     #windowManager.qtile.enable = true;
     };    
 
-   
-    programs.hyprland = {
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
+  programs.hyprland = {
     enable = true;
     # set the flake package
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     # make sure to also set the portal package, so that they are in sync
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-    };
+  };
 
   programs.niri.enable = true;
 
-  stylix = {
-    enable = true;
-    polarity = "dark";
-
-    image = ./modules/w/schweiz.jpg;
-    iconTheme = {
-			enable = true;
-	 		package = pkgs.papirus-icon-theme;
-	 		light = "Papirus";
-	 		dark = "Paprius Dark";
-	 	};
-    cursor = {
- 	       		package = pkgs.bibata-cursors;
- 	       		name = "Bibata-Modern-Classic";
- 	       		size = 24;
- 	       	};
- 	       	fonts = {
- 	       		sizes = {
- 	       			terminal = 14;
- 	       			desktop = 12;
- 	       		};
-
- 	       		monospace = {
- 	       			package = pkgs.nerd-fonts.jetbrains-mono;
- 	       			name = "JetBrainsMono Nerd Font Mono";
- 	       		};
- 	       		sansSerif = {
- 	       			package = pkgs.dejavu_fonts;
- 	       			name = "DejaVu Sans";
- 	       		};
- 	       		serif = {
- 	       			package = pkgs.dejavu_fonts;
- 	       			name = "DejaVu Serif";
- 	       		};
- 	       	};
-  };
-
   services.displayManager.ly.enable = true;
-
 
   # Configure keymap in X11
   services.xserver.xkb = {
