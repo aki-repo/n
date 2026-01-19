@@ -86,7 +86,7 @@
           };
         };
         colorSchemes = {
-          predefinedScheme = "Neutral";
+          #predefinedScheme = "Neutral";
           useWallpaperColors = true;
           darkMode = true;
           matugenSchemeType = "scheme-neutral";
