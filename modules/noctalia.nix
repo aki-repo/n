@@ -16,7 +16,7 @@
               enabled = true;
             }
             {
-              id = "fuzzel";
+              id = "Fuzzel";
               enabled = true;
             }
           ];
