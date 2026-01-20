@@ -4,8 +4,8 @@
     enable = true;
     polarity = "dark";
 
-    image = ./w/schweiz.jpg;
-    iconTheme = {
+    image = ./w/benz.jpg;
+    icons = {
 			enable = true;
 	 		package = pkgs.papirus-icon-theme;
 	 		light = "Papirus";

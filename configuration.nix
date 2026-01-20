@@ -72,15 +72,18 @@
 
   programs.hyprland = {
     enable = true;
-    # set the flake package
+    withUWSM = true;
+		xwayland.enable = true;
+		# set the flake package
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     # make sure to also set the portal package, so that they are in sync
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
+
   programs.niri.enable = true;
 
-  services.displayManager.ly.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -130,8 +133,14 @@
     kitty
   ];
   
-
-  nix.settings = {
+  programs.nh = {
+    enable = true;
+		clean.enable = true;
+		clean.extraArgs = "--keep-since 5d --keep 3";
+		flake = "/home/aki/c/n";
+	};
+  
+	nix.settings = {
     substituters = ["https://hyprland.cachix.org"];
     trusted-substituters = ["https://hyprland.cachix.org"];
     trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];

@@ -34,6 +34,7 @@ in
       settings.user.email = "andreast.work@gmail.com";  # Replace with your email
       };
 
+
   # Essential packages
   home.packages = with pkgs; [
     # Development tools
@@ -52,7 +53,6 @@ in
     tree
     jq
     yazi
-
     # Modern CLI tools
     lazygit       # Git TUI
     ];
