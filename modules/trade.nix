@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 
 {
-    pkgs = with pkgs; [
+    home.packages = with pkgs; [
         tradingview
         zulu
     ];
