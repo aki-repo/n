@@ -5,6 +5,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       #./modules/gnome.nix
+      ./modules/stylix.nix
     ];
 
   # Bootloader.

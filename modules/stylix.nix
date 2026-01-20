@@ -4,7 +4,7 @@
     enable = true;
     polarity = "dark";
 
-    image = ./modules/w/schweiz.jpg;
+    image = ./w/schweiz.jpg;
     iconTheme = {
 			enable = true;
 	 		package = pkgs.papirus-icon-theme;
