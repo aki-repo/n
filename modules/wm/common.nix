@@ -11,7 +11,7 @@
     vscode
 		adw-gtk3
 		vesktop 
-    librewolf
+    librewolf-bin
     chromium
     matugen
 		microfetch
